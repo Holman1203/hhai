@@ -25,7 +25,7 @@ const slides = [
       { label: 'Our Programs',  href: '/programs',               primary: true  },
       { label: 'Learn More',    href: '/about',                   primary: false },
     ],
-    image:    '/images/hero-field-1.jpg',
+    image:    '/images/hero-field-1.jpeg',
     imageAlt: 'HHAI field worker in purple vest documenting community health data on the ground',
   },
   {
@@ -38,7 +38,7 @@ const slides = [
       { label: 'Health Programs',   href: '/programs/health',      primary: true  },
       { label: 'Donate Now',        href: '/get-involved#donate',  primary: false },
     ],
-    image:    '/images/hero-field-2.jpg',
+    image:    '/images/hero-field-2.jpeg',
     imageAlt: 'HHAI team distributing health and nutrition supplies to mothers and children in a community',
   },
   {
@@ -51,7 +51,7 @@ const slides = [
       { label: 'View Projects',     href: '/projects',             primary: true  },
       { label: 'Partner With Us',   href: '/get-involved#partners',primary: false },
     ],
-    image:    '/images/hero-field-3.jpg',
+    image:    '/images/hero-field-3.jpeg',
     imageAlt: 'HHAI community outreach team engaging with local community members and children',
   },
   {
