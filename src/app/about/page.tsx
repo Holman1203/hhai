@@ -77,9 +77,9 @@ export default function AboutPage() {
           />
         </div>
         <div className="relative z-10 container-site text-center">
-          <p className="text-brand-orange font-semibold text-sm uppercase tracking-widest mb-3">About HHAI</p>
-          <h1 className="text-4xl lg:text-5xl font-bold text-white font-serif mb-5">
-            Building Healthier Communities Across Nigeria
+          <p className="text-[#86efac] font-semibold text-xs uppercase tracking-[0.2em] mb-3">Haske Humanitarian Aid Initiative</p>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-5" style={{ letterSpacing: '-0.025em' }}>
+            Who We <em style={{ fontStyle: 'italic', color: '#86efac' }}>Are</em>
           </h1>
           <p className="text-green-200 max-w-2xl mx-auto text-lg leading-relaxed">
             Since 2022, Haske Humanitarian Aid Initiative has been building an enabling environment where women and children&apos;s health needs are prioritised through community engagement and sustainable rural development.
