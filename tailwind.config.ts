@@ -31,10 +31,12 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans:    ['var(--font-inter)',    'system-ui', 'sans-serif'],
-        serif:   ['var(--font-playfair)', 'Georgia',   'serif'     ],
-        display: ['var(--font-playfair)', 'Georgia',   'serif'     ],
+        /* Poppins is the only heading/display font — no serifs anywhere */
+        sans:    ['var(--font-poppins)',  'var(--font-inter)', 'system-ui', 'sans-serif'],
+        serif:   ['var(--font-poppins)',  'system-ui', 'sans-serif'], /* intentionally remapped — no serif */
+        display: ['var(--font-poppins)',  'system-ui', 'sans-serif'],
         poppins: ['var(--font-poppins)',  'system-ui', 'sans-serif'],
+        body:    ['var(--font-inter)',    'system-ui', 'sans-serif'],
       },
       fontSize: {
         /* Fluid heading scale */

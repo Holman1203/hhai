@@ -229,29 +229,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── IMPACT STATS — CBI.ngo clean bold style ── */}
-      <section className="py-20 bg-white border-b border-gray-100">
+      {/* ── IMPACT STATS — massive bold numbers, generous whitespace ── */}
+      <section className="py-28 bg-white border-b border-gray-100">
         <div className="container-site">
           <RevealOnScroll>
-            <div className="text-center mb-14">
+            <div className="text-center mb-20">
               <p className="section-subheading">Our Impact</p>
               <h2 className="section-heading">
                 Numbers That Tell <em>Our Story</em>
               </h2>
+              <p className="text-gray-500 mt-4 max-w-lg mx-auto text-base">
+                Real results from real communities — tracked, verified, and growing every year since 2022.
+              </p>
             </div>
           </RevealOnScroll>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+
+          <div className="grid grid-cols-2 md:grid-cols-5">
             {stats.map((stat, i) => (
               <RevealOnScroll key={stat.label} delay={i * 0.1} direction="up">
-                <div className="flex flex-col items-center text-center px-6 py-10 group hover:bg-[#EBF8F1] transition-colors duration-300 rounded-2xl">
-                  <div className="w-11 h-11 rounded-full bg-[#EBF8F1] group-hover:bg-white flex items-center justify-center mb-4 transition-colors">
-                    <stat.icon size={20} className="text-brand-blue" />
+                <div className="flex flex-col items-center text-center px-4 py-8 md:py-0 md:border-r border-b md:border-b-0 border-gray-100 last:border-r-0 group">
+                  {/* Giant number — the centrepiece */}
+                  <div
+                    className="font-black leading-none tracking-tighter text-[#0B4422] mb-3"
+                    style={{ fontSize: 'clamp(3rem, 6vw, 5rem)' }}
+                  >
+                    <AnimatedCounter value={stat.value} duration={2000} />
                   </div>
-                  <div className="text-4xl lg:text-5xl font-black text-brand-blue mb-1 leading-none tracking-tight">
-                    <AnimatedCounter value={stat.value} duration={1800} />
-                  </div>
-                  <div className="text-sm font-semibold text-[#0F1720] mt-2 leading-tight">{stat.label}</div>
+                  <div className="text-sm font-bold text-[#0F1720] leading-tight">{stat.label}</div>
                   <div className="text-xs text-gray-400 mt-1">{stat.sub}</div>
+                  {/* Purple underline accent on hover */}
+                  <div className="w-8 h-[2px] bg-[#7848A8] rounded-full mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </RevealOnScroll>
             ))}
@@ -260,7 +267,7 @@ export default function HomePage() {
       </section>
 
       {/* ── WHO WE ARE ── */}
-      <section className="py-20 bg-white">
+      <section className="py-28 bg-white">
         <div className="container-site">
           <RevealOnScroll>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -332,7 +339,7 @@ export default function HomePage() {
       </section>
 
       {/* ── WHERE WE WORK ── */}
-      <section className="py-20 bg-brand-blue-light">
+      <section className="py-28 bg-[#EBF8F1]">
         <div className="container-site">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <p className="section-subheading">Geographic Reach</p>
@@ -393,7 +400,7 @@ export default function HomePage() {
       </section>
 
       {/* ── PROGRAMS / THEMATIC SECTORS ── */}
-      <section className="py-20 bg-white">
+      <section className="py-28 bg-white">
         <div className="container-site">
           <RevealOnScroll>
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -462,7 +469,7 @@ export default function HomePage() {
       </section>
 
       {/* ── FOUNDER QUOTE ── */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-24 bg-white">
         <div className="container-site">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-brand-blue to-[#1A7A3A] rounded-3xl p-8 lg:p-12 relative overflow-hidden shadow-2xl">
@@ -502,7 +509,7 @@ export default function HomePage() {
       </section>
 
       {/* ── IMPACT STORIES ── */}
-      <section className="py-20 bg-white">
+      <section className="py-28 bg-white">
         <div className="container-site">
           <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
             <div>
@@ -610,7 +617,7 @@ export default function HomePage() {
       </section>
 
       {/* ── LATEST NEWS ── */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-28 bg-[#F8F6F3]">
         <div className="container-site">
           <RevealOnScroll>
           <div className="flex items-end justify-between mb-12 flex-wrap gap-4">

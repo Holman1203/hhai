@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Playfair_Display, Poppins } from 'next/font/google';
+import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -14,16 +14,7 @@ const inter = Inter({
   weight: ['300', '400', '500', '600', '700', '800'],
 });
 
-/* Display headings — elegant, authoritative editorial serif */
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  display: 'swap',
-  weight: ['400', '500', '600', '700', '800', '900'],
-  style: ['normal', 'italic'],
-});
-
-/* UI / subheadings — modern, geometric, highly legible */
+/* UI / subheadings & headings — modern, clean, highly legible */
 const poppins = Poppins({
   subsets: ['latin'],
   variable: '--font-poppins',
@@ -88,7 +79,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable} ${poppins.variable}`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <body>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-blue text-white px-4 py-2 rounded z-50">
           Skip to main content

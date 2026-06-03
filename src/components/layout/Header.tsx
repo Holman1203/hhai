@@ -87,9 +87,12 @@ export default function Header() {
             <span className="text-blue-200">Community Health &amp; Rural Development · Nigeria</span>
             <Link
               href="/get-involved#donate"
-              className="bg-brand-orange hover:bg-purple-700 text-white px-4 py-1 rounded font-semibold transition-colors inline-flex items-center gap-1.5"
+              className="text-white px-4 py-1.5 rounded-full font-semibold transition-colors inline-flex items-center gap-1.5 text-xs tracking-wide"
+              style={{backgroundColor:'#7848A8'}}
+              onMouseOver={e=>(e.currentTarget.style.backgroundColor='#562E8F')}
+              onMouseOut={e=>(e.currentTarget.style.backgroundColor='#7848A8')}
             >
-              <Heart size={11} /> Donate Now
+              ♥ Donate Now
             </Link>
           </div>
         </div>
@@ -206,13 +209,16 @@ export default function Header() {
               </button>
               <Link
                 href="/get-involved#donate"
-                className={`hidden lg:inline-flex items-center gap-1.5 text-sm py-2 font-semibold px-5 rounded-lg transition-all duration-300 ${
+                className={`hidden lg:inline-flex items-center gap-1.5 text-sm py-2.5 font-semibold px-6 rounded-full transition-all duration-200 tracking-wide ${
                   isTransparent
-                    ? 'border-2 border-white/70 text-white hover:bg-white hover:text-brand-blue'
-                    : 'btn-primary'
+                    ? 'border-2 border-white/70 text-white hover:bg-white/15'
+                    : 'text-white shadow-[0_4px_16px_rgba(120,72,168,0.3)] hover:-translate-y-px'
                 }`}
+              style={!isTransparent ? {backgroundColor:'#7848A8'} : {}}
+              onMouseOver={e=>{ if(!isTransparent) e.currentTarget.style.backgroundColor='#562E8F'; }}
+              onMouseOut={e=>{ if(!isTransparent) e.currentTarget.style.backgroundColor='#7848A8'; }}
               >
-                <Heart size={15} /> Donate Now
+                ♥ Donate Now
               </Link>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}

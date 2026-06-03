@@ -44,9 +44,9 @@ export default function Footer() {
             <div className="flex items-center gap-3 flex-shrink-0">
               <Link
                 href="/get-involved#donate"
-                className="inline-flex items-center gap-2 bg-white text-brand-orange font-bold px-6 py-3 rounded-lg hover:bg-purple-50 transition-colors shadow-md"
+                className="inline-flex items-center gap-2 bg-white text-[#7848A8] font-bold px-6 py-3.5 rounded-full hover:bg-purple-50 transition-colors shadow-md text-sm tracking-wide"
               >
-                Donate Now <ArrowRight size={16} />
+                ♥ Donate Now
               </Link>
               <Link
                 href="/get-involved#partners"
