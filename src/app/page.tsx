@@ -22,13 +22,14 @@ const stats = [
   { value: '2022',    label: 'Year Established',        sub: 'CAC No. 182258',            icon: Heart,       color: 'text-brand-green'  },
 ];
 
+/* Two brand colors only — green for core, purple for support */
 const programs = [
   {
     title: 'Health',
     icon: Heart,
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=260&auto=format&fit=crop&q=85',
     stat: '5,000+', statLabel: 'Mothers & Children',
-    color: 'bg-red-50 text-red-600 border-red-100', accent: 'bg-red-600',
+    color: 'bg-[#EBF8F1] text-[#0B4422] border-[#c3e8d5]', accent: 'bg-[#00A850]',
     href: '/programs/health',
     description: 'Awareness creation on RMNCHN — health needs of women of child-bearing age and children under-5, through collaboration with state, LGA, and community stakeholders.',
     reach: 'Core program area',
@@ -38,7 +39,7 @@ const programs = [
     icon: Leaf,
     image: 'https://images.unsplash.com/photo-1547489432-cf93fa6c71ee?w=500&h=260&auto=format&fit=crop&q=85',
     stat: '3,200+', statLabel: 'Children Treated',
-    color: 'bg-green-50 text-green-600 border-green-100', accent: 'bg-green-600',
+    color: 'bg-[#EEE6F8] text-[#562E8F] border-[#d9c8ef]', accent: 'bg-[#7848A8]',
     href: '/programs/nutrition',
     description: 'Enhancing nutritional status of pregnant/lactating mothers and children under-5 through capacity building on nutritional food concepts, combination, and processing.',
     reach: 'Core program area',
@@ -48,7 +49,7 @@ const programs = [
     icon: Users,
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=260&auto=format&fit=crop&q=85',
     stat: '1,800+', statLabel: 'Women Empowered',
-    color: 'bg-purple-50 text-purple-600 border-purple-100', accent: 'bg-purple-600',
+    color: 'bg-[#EBF8F1] text-[#0B4422] border-[#c3e8d5]', accent: 'bg-[#1B6B38]',
     href: '/programs/protection',
     description: 'Building the capacity and agency of women to adopt best health practices, identify income-generating opportunities, and contribute meaningfully to their communities.',
     reach: 'Core program area',
@@ -58,7 +59,7 @@ const programs = [
     icon: Shield,
     image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=500&h=260&auto=format&fit=crop&q=85',
     stat: '2,500+', statLabel: 'Cases Managed',
-    color: 'bg-indigo-50 text-indigo-600 border-indigo-100', accent: 'bg-indigo-600',
+    color: 'bg-[#EEE6F8] text-[#562E8F] border-[#d9c8ef]', accent: 'bg-[#562E8F]',
     href: '/programs/protection',
     description: 'Ensuring safety and dignity of women and children — addressing gender-based risks, psychosocial needs, and creating protective community environments.',
     reach: 'Support program',
@@ -68,7 +69,7 @@ const programs = [
     icon: Droplets,
     image: 'https://images.unsplash.com/photo-1534293230397-c067fc201ab8?w=500&h=260&auto=format&fit=crop&q=85',
     stat: '8,000+', statLabel: 'WASH Beneficiaries',
-    color: 'bg-blue-50 text-blue-600 border-blue-100', accent: 'bg-blue-600',
+    color: 'bg-[#EBF8F1] text-[#0B4422] border-[#c3e8d5]', accent: 'bg-[#00A850]',
     href: '/programs/wash',
     description: 'Promoting safe water, sanitation, and hygiene practices to improve health outcomes for mothers and children, reducing waterborne disease.',
     reach: 'Support program',
@@ -78,7 +79,7 @@ const programs = [
     icon: Wheat,
     image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&h=260&auto=format&fit=crop&q=85',
     stat: '2,000+', statLabel: 'Households Supported',
-    color: 'bg-yellow-50 text-yellow-600 border-yellow-100', accent: 'bg-yellow-500',
+    color: 'bg-[#EEE6F8] text-[#562E8F] border-[#d9c8ef]', accent: 'bg-[#7848A8]',
     href: '/programs/food-security',
     description: 'Supporting household food security and agricultural livelihoods, particularly for women-led households, as a foundation for improved health and nutrition outcomes.',
     reach: 'Support program',
@@ -88,7 +89,7 @@ const programs = [
     icon: BookOpen,
     image: 'https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=500&h=260&auto=format&fit=crop&q=85',
     stat: '1,500+', statLabel: 'Children Enrolled',
-    color: 'bg-orange-50 text-orange-600 border-orange-100', accent: 'bg-orange-500',
+    color: 'bg-[#EBF8F1] text-[#0B4422] border-[#c3e8d5]', accent: 'bg-[#1B6B38]',
     href: '/programs/education',
     description: 'Providing access to quality education for out-of-school children, with a focus on girls — through temporary learning spaces, teacher training, and school materials.',
     reach: 'Support program',
@@ -169,7 +170,7 @@ const news = [
     date: 'May 15, 2024',
     category: 'Field Report',
     categoryColor: 'bg-green-100 text-green-700',
-    borderColor: 'border-t-green-500',
+    borderColor: 'border-t-[#00A850]',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=280&auto=format&fit=crop&q=85',
     excerpt: 'The grant will enable HHAI to treat 15,000 children suffering from severe acute malnutrition across Borno and Yobe states.',
     href: '/media/news/usaid-nutrition-grant',
@@ -180,7 +181,7 @@ const news = [
     date: 'April 28, 2024',
     category: 'WASH',
     categoryColor: 'bg-blue-100 text-blue-700',
-    borderColor: 'border-t-blue-500',
+    borderColor: 'border-t-[#7848A8]',
     image: 'https://images.unsplash.com/photo-1534293230397-c067fc201ab8?w=500&h=280&auto=format&fit=crop&q=85',
     excerpt: 'The 18-month EU-funded project will construct 30 new boreholes and train 150 community water management committees.',
     href: '/media/news/adamawa-wash-project',
@@ -191,7 +192,7 @@ const news = [
     date: 'March 10, 2024',
     category: 'Food Security',
     categoryColor: 'bg-purple-100 text-purple-700',
-    borderColor: 'border-t-purple-500',
+    borderColor: 'border-t-[#0B4422]',
     image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&h=280&auto=format&fit=crop&q=85',
     excerpt: 'Multi-purpose cash assistance will provide immediate relief and restore purchasing power for displacement-affected families in Borno State.',
     href: '/media/news/cash-transfer-launch',
@@ -207,12 +208,12 @@ export default function HomePage() {
       {/* ── HERO SLIDER ── */}
       <HeroSlider />
 
-      {/* ── EMERGENCY ALERT ── */}
-      <section className="bg-red-600 text-white py-3.5">
+      {/* ── EMERGENCY ALERT — purple brand color ── */}
+      <section className="bg-brand-orange text-white py-3.5">
         <div className="container-site">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <div className="flex items-center gap-3">
-              <AlertTriangle size={18} className="flex-shrink-0 animate-pulse" />
+              <AlertTriangle size={17} className="flex-shrink-0 animate-pulse" />
               <p className="text-sm font-medium">
                 <span className="font-bold">Emergency Appeal:</span>{' '}
                 8.4 million people in Northeast Nigeria need urgent humanitarian assistance in 2024. HHAI is responding now.
@@ -220,33 +221,37 @@ export default function HomePage() {
             </div>
             <Link
               href="/get-involved#donate"
-              className="flex-shrink-0 inline-flex items-center gap-1.5 bg-white text-red-600 font-bold text-sm px-4 py-2 rounded-lg hover:bg-red-50 transition-colors"
+              className="flex-shrink-0 inline-flex items-center gap-1.5 bg-white text-brand-orange font-bold text-sm px-4 py-2 rounded-full hover:bg-purple-50 transition-colors"
             >
-              Respond Now <ArrowRight size={14} />
+              Respond Now <ArrowRight size={13} />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ── IMPACT STATS ── */}
-      <section className="py-16 bg-gradient-to-br from-brand-blue to-[#1A7A3A]">
+      {/* ── IMPACT STATS — CBI.ngo clean bold style ── */}
+      <section className="py-20 bg-white border-b border-gray-100">
         <div className="container-site">
-          <div className="text-center mb-10">
-            <p className="text-green-300 text-xs uppercase tracking-widest font-semibold mb-2">Our Impact</p>
-            <h2 className="text-3xl font-bold text-white font-serif">Numbers That Tell Our Story</h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <RevealOnScroll>
+            <div className="text-center mb-14">
+              <p className="section-subheading">Our Impact</p>
+              <h2 className="section-heading">
+                Numbers That Tell <em>Our Story</em>
+              </h2>
+            </div>
+          </RevealOnScroll>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-0 divide-y md:divide-y-0 md:divide-x divide-gray-100">
             {stats.map((stat, i) => (
-              <RevealOnScroll key={stat.label} delay={i * 0.08} direction="up">
-                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 text-center hover:bg-white/20 transition-all duration-300 group h-full">
-                  <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-brand-orange/60 transition-colors">
-                    <stat.icon size={20} className="text-white" />
+              <RevealOnScroll key={stat.label} delay={i * 0.1} direction="up">
+                <div className="flex flex-col items-center text-center px-6 py-10 group hover:bg-[#EBF8F1] transition-colors duration-300 rounded-2xl">
+                  <div className="w-11 h-11 rounded-full bg-[#EBF8F1] group-hover:bg-white flex items-center justify-center mb-4 transition-colors">
+                    <stat.icon size={20} className="text-brand-blue" />
                   </div>
-                  <div className="text-2xl lg:text-3xl font-black text-white font-serif mb-0.5">
-                    <AnimatedCounter value={stat.value} duration={1600} />
+                  <div className="text-4xl lg:text-5xl font-black text-brand-blue mb-1 leading-none tracking-tight">
+                    <AnimatedCounter value={stat.value} duration={1800} />
                   </div>
-                  <div className="text-white text-xs font-semibold leading-tight mb-1">{stat.label}</div>
-                  <div className="text-green-300 text-[10px] leading-tight">{stat.sub}</div>
+                  <div className="text-sm font-semibold text-[#0F1720] mt-2 leading-tight">{stat.label}</div>
+                  <div className="text-xs text-gray-400 mt-1">{stat.sub}</div>
                 </div>
               </RevealOnScroll>
             ))}
@@ -262,7 +267,7 @@ export default function HomePage() {
             <div>
               <p className="section-subheading">Who We Are</p>
               <h2 className="section-heading mb-5">
-                A Trusted Humanitarian Partner in Nigeria&apos;s Most Complex Crisis
+                A Trusted Partner in Nigeria&apos;s Most <em>Complex Crisis</em>
               </h2>
               <div className="divider-orange mb-6" />
               <p className="text-gray-600 leading-relaxed mb-4">
@@ -331,7 +336,7 @@ export default function HomePage() {
         <div className="container-site">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <p className="section-subheading">Geographic Reach</p>
-            <h2 className="section-heading mb-4">Where We Work</h2>
+            <h2 className="section-heading mb-4">Where We <em>Work</em></h2>
             <p className="text-gray-600">
               Operating across 6 states in Nigeria, with concentrated programming in Adamawa and Bauchi — reaching the most underserved women and children in each community.
             </p>
@@ -393,7 +398,7 @@ export default function HomePage() {
           <RevealOnScroll>
           <div className="text-center max-w-2xl mx-auto mb-12">
             <p className="section-subheading">What We Do</p>
-            <h2 className="section-heading mb-4">Our Thematic Areas of Intervention</h2>
+            <h2 className="section-heading mb-4">Seven Programs. <em>One Mission.</em></h2>
             <p className="text-gray-600">
               Seven integrated sectors working together to deliver comprehensive humanitarian response and build community resilience across Nigeria.
             </p>
@@ -502,7 +507,7 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
             <div>
               <p className="section-subheading">Impact Stories</p>
-              <h2 className="section-heading">Voices from the Field</h2>
+              <h2 className="section-heading">Voices from <em>the Field</em></h2>
             </div>
             <Link href="/projects" className="text-brand-blue hover:text-brand-orange transition-colors font-semibold text-sm flex items-center gap-1">
               View All Projects <ArrowRight size={14} />
@@ -568,11 +573,11 @@ export default function HomePage() {
       </section>
 
       {/* ── HUMAN STORIES / TESTIMONIALS ── */}
-      <section className="py-20 bg-brand-blue">
+      <section className="py-20 bg-[#0B4422]">
         <div className="container-site">
           <div className="text-center max-w-xl mx-auto mb-12">
             <p className="text-brand-orange font-semibold text-xs uppercase tracking-widest mb-2">Human Stories</p>
-            <h2 className="text-3xl font-bold text-white font-serif">Lives Transformed</h2>
+            <h2 className="text-3xl font-bold text-white" style={{fontFamily:'var(--font-poppins)', letterSpacing:'-0.02em'}}>Lives <em style={{fontStyle:'italic',color:'#86efac'}}>Transformed</em></h2>
             <p className="text-green-200 text-sm mt-3 max-w-md mx-auto">Real voices from the communities we serve — stories of resilience, recovery, and renewed hope.</p>
           </div>
 
@@ -611,7 +616,7 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-12 flex-wrap gap-4">
             <div>
               <p className="section-subheading">Latest Updates</p>
-              <h2 className="section-heading">News from the Field</h2>
+              <h2 className="section-heading">News from <em>the Field</em></h2>
             </div>
             <Link href="/media" className="text-brand-blue hover:text-brand-orange transition-colors font-semibold text-sm flex items-center gap-1">
               All News & Reports <ArrowRight size={14} />
@@ -658,7 +663,7 @@ export default function HomePage() {
       </section>
 
       {/* ── NEWSLETTER ── */}
-      <section className="py-16 bg-gradient-to-br from-brand-green to-[#1e5c34]">
+      <section className="py-16 bg-gradient-to-br from-[#7848A8] to-[#562E8F]">
         <div className="container-site">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-green-200 text-xs uppercase tracking-widest font-semibold mb-3">Stay Informed</p>

@@ -197,15 +197,15 @@ export default function HeroSlider() {
                 </span>
               </motion.div>
 
-              {/* Headline */}
+              {/* Headline — CBI.ngo italic-emphasis style */}
               <motion.h1
                 variants={headlineVariants}
-                className="font-serif font-bold text-white leading-[1.08] mb-5"
-                style={{ fontSize: 'clamp(2.3rem, 5.8vw, 4.4rem)', letterSpacing: '-0.02em' }}
+                className="hero-title font-bold text-white leading-[1.1] mb-5"
+                style={{ fontSize: 'clamp(2.4rem, 6vw, 4.5rem)', letterSpacing: '-0.025em', fontFamily: 'var(--font-poppins)' }}
               >
                 {current.headline[0]}
                 <br />
-                <span className="text-green-300">{current.headline[1]}</span>
+                <em>{current.headline[1]}</em>
               </motion.h1>
 
               {/* Accent line */}
