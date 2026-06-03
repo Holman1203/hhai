@@ -129,6 +129,7 @@ export default function Header() {
             <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
               <Link href="/" className={navCls('/', true)}>Home</Link>
               <Link href="/about" className={navCls('/about')}>About Us</Link>
+              <Link href="/team" className={navCls('/team')}>Our Team</Link>
 
               {/* Programs dropdown */}
               <div className="relative" onMouseLeave={() => setIsProgramsOpen(false)}>
@@ -256,6 +257,9 @@ export default function Header() {
               </Link>
               <Link href="/about" onClick={closeAll} className="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-brand-blue-light hover:text-brand-blue rounded-lg transition-colors">
                 About Us
+              </Link>
+              <Link href="/team" onClick={closeAll} className="block px-4 py-3 text-sm font-medium text-gray-700 hover:bg-brand-blue-light hover:text-brand-blue rounded-lg transition-colors">
+                Our Team
               </Link>
 
               <div>

@@ -189,14 +189,6 @@ export default function HeroSlider() {
             animate="visible"
             className="max-w-2xl lg:max-w-3xl"
           >
-              {/* Tag badge */}
-              <motion.div variants={tagVariants} className="mb-6">
-                <span className="inline-flex items-center gap-2 bg-brand-orange/95 backdrop-blur-sm text-white text-[10px] font-poppins font-bold px-4 py-1.5 rounded-full uppercase tracking-[0.18em] shadow-purple">
-                  <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse-slow" />
-                  {current.tag}
-                </span>
-              </motion.div>
-
               {/* Headline — CBI.ngo italic-emphasis style */}
               <motion.h1
                 variants={headlineVariants}
