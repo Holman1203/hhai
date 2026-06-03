@@ -1,24 +1,34 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Merriweather } from 'next/font/google';
+import { Inter, Playfair_Display, Poppins } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/layout/WhatsAppButton';
 import MainWrapper from '@/components/layout/MainWrapper';
 
+/* Body — excellent readability at all sizes */
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  weight: ['300', '400', '500', '600', '700', '800'],
 });
 
-const merriweather = Merriweather({
+/* Display headings — elegant, authoritative editorial serif */
+const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-merriweather',
+  variable: '--font-playfair',
   display: 'swap',
-  weight: ['300', '400', '700', '900'],
+  weight: ['400', '500', '600', '700', '800', '900'],
   style: ['normal', 'italic'],
+});
+
+/* UI / subheadings — modern, geometric, highly legible */
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap',
+  weight: ['300', '400', '500', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
@@ -78,7 +88,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${merriweather.variable}`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} ${poppins.variable}`}>
       <body>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-brand-blue text-white px-4 py-2 rounded z-50">
           Skip to main content

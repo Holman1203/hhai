@@ -170,9 +170,11 @@ export default function HeroSlider() {
                 draggable={false}
               />
             </div>
-            {/* Dual-layer gradients for readability at all screen sizes */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/20" />
+            {/* Brand-tinted overlays — deep green left (text area), fades right */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0B4422]/85 via-[#0B4422]/50 to-[#0B4422]/10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/15" />
+            {/* Subtle purple accent at bottom right for brand depth */}
+            <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-[#7848A8]/20 to-transparent" />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -188,9 +190,9 @@ export default function HeroSlider() {
             className="max-w-2xl lg:max-w-3xl"
           >
               {/* Tag badge */}
-              <motion.div variants={tagVariants} className="mb-5">
-                <span className="inline-flex items-center gap-2 bg-brand-orange/90 backdrop-blur-sm text-white text-[11px] font-bold px-4 py-1.5 rounded-full uppercase tracking-[0.14em] shadow-lg">
-                  <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
+              <motion.div variants={tagVariants} className="mb-6">
+                <span className="inline-flex items-center gap-2 bg-brand-orange/95 backdrop-blur-sm text-white text-[10px] font-poppins font-bold px-4 py-1.5 rounded-full uppercase tracking-[0.18em] shadow-purple">
+                  <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse-slow" />
                   {current.tag}
                 </span>
               </motion.div>
@@ -198,25 +200,25 @@ export default function HeroSlider() {
               {/* Headline */}
               <motion.h1
                 variants={headlineVariants}
-                className="font-serif font-bold text-white leading-[1.1] mb-4"
-                style={{ fontSize: 'clamp(2.2rem, 5.5vw, 4.25rem)' }}
+                className="font-serif font-bold text-white leading-[1.08] mb-5"
+                style={{ fontSize: 'clamp(2.3rem, 5.8vw, 4.4rem)', letterSpacing: '-0.02em' }}
               >
                 {current.headline[0]}
                 <br />
-                <span className="text-brand-orange">{current.headline[1]}</span>
+                <span className="text-green-300">{current.headline[1]}</span>
               </motion.h1>
 
               {/* Accent line */}
               <motion.div
                 variants={lineVariants}
-                className="w-20 h-[3px] bg-brand-orange rounded-full mb-5 origin-left"
+                className="w-16 h-[3px] bg-brand-orange rounded-full mb-6 origin-left"
               />
 
               {/* Description */}
               <motion.p
                 variants={descVariants}
-                className="text-white/85 leading-relaxed mb-8 max-w-xl"
-                style={{ fontSize: 'clamp(0.92rem, 1.6vw, 1.1rem)' }}
+                className="text-white/80 leading-relaxed mb-9 max-w-lg font-light"
+                style={{ fontSize: 'clamp(0.93rem, 1.6vw, 1.08rem)' }}
               >
                 {current.description}
               </motion.p>
@@ -228,7 +230,7 @@ export default function HeroSlider() {
                     <Link
                       key={btn.label}
                       href={btn.href}
-                      className="inline-flex items-center gap-2 bg-brand-orange hover:bg-purple-700 active:scale-95 text-white font-bold px-5 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/30 text-sm lg:text-[0.95rem]"
+                      className="inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-purple-dark active:scale-95 text-white font-poppins font-semibold px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5 shadow-purple text-sm tracking-wide"
                     >
                       {btn.label} <ArrowRight size={15} />
                     </Link>
@@ -236,7 +238,7 @@ export default function HeroSlider() {
                     <Link
                       key={btn.label}
                       href={btn.href}
-                      className="inline-flex items-center gap-2 border-2 border-white/60 hover:border-white text-white font-semibold px-5 py-3 rounded-lg backdrop-blur-sm hover:bg-white hover:text-brand-blue active:scale-95 transition-all duration-300 text-sm lg:text-[0.95rem]"
+                      className="inline-flex items-center gap-2 border-2 border-white/50 hover:border-white text-white font-poppins font-semibold px-7 py-3.5 rounded-full backdrop-blur-sm hover:bg-white hover:text-brand-blue active:scale-95 transition-all duration-300 text-sm tracking-wide"
                     >
                       {btn.label}
                     </Link>
